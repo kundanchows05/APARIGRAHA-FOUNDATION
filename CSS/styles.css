@@ -1,0 +1,112 @@
+/* COLOR PALETTE */
+:root{
+  --color-primary:#1b0760;
+  --color-secondary:#00d9ff;
+  --color-accent:#ff3400;
+  --color-headings:#1b0760;
+  --color-body:#918ca4;
+}
+
+/* HOME PAGE */
+body{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+a {
+text-decoration: none;
+}
+a:hover {
+color: var(--color-secondary);
+text-decoration: none;
+}
+
+.Nav-Bar {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+height: 70p;
+
+}
+.logo {
+margin-left: 100px;
+margin-right: 100px;
+height: 40px;
+width: 200px;
+object-fit: cover;
+}
+.displayImg {
+object-fit: cover;
+height: 600px;
+width: 99vw;
+}
+.link-arrow{
+color: var(--color-primary);
+text-decoration: none;
+font-weight: bold;
+
+}
+.link-arrow:hover{
+text-decoration: none;
+color: var(--color-secondary);
+text-decoration: none;
+}
+.link-arrow::after{
+content:"-->";
+margin-left: 5px;
+text-decoration: none;
+transition: margin 0.25s;
+}
+.link-arrow:hover::after{
+margin-left: 10px;
+
+}
+/* REGISTRATION PAGE */
+
+.reg-img {
+  width: 550px;
+  height: auto;
+}
+.images {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.space {
+  height: 20px;
+}
+div {
+  margin-bottom: 10px;
+}
+input {
+  padding: 10px 15px;
+  margin-top: 5px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  width: 500px;
+  outline: 0px;
+}
+input:focus {
+  border: 2px solid var(--color-primary);
+}
+button {
+  background-color:var(--color-accent);
+  font-size:larger;
+  border-radius: 5px;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  color: white;
+  margin: 0px 10px 10px 0px;
+  border: 0;
+}
+button:hover {
+  background-color: var(--color-primary);
+}
+.radio {
+  width: auto;
+}
